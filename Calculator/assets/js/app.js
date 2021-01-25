@@ -1,3 +1,4 @@
+// The functions to be performed
 function add(a,b){
     return "The result is " + Number(a) + Number(b);
 }
@@ -36,10 +37,13 @@ function square(a){
 function addMany(){
     var value = prompt("How many numbers do you wanna add?");
 
+    //Take the numbers to be calculated step by step
     numbers = new Array();
     for(let i = 0; i < parseInt(value); i++){
         numbers[i] = prompt("Enter number");   
     }
+
+    // Do the multiplication of the numbers
     var a = 0;
     for(let i = 0; i < parseInt(value); i++){
         a = Number(a) + Number(numbers[i]);
@@ -51,10 +55,13 @@ function addMany(){
 function mulMany(){
     var value = prompt("How many numbers do you wanna multiply?");
 
+    //Take the numbers to be calculated step by step
     numbers = new Array();
     for(let i = 0; i < parseInt(value); i++){
         numbers[i] = prompt("Enter number");   
     }
+
+    // Do the multiplication of the numbers
     var a = 1;
     for(let i = 0; i < parseInt(value); i++){
         a = a * parseInt(numbers[i]);
@@ -63,6 +70,7 @@ function mulMany(){
     return "The result is " + a;
 }
 
+// The IIFEs statement
 (function() {
     let service = prompt("Which service do you want?  1, Addition  2, Subtraction  3, Multiplication  4, Division 5, Maximum 6, Minimum 7, average 8, square 9, Addition of many numbers 10, Multiplication of many numbers")
 
