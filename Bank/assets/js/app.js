@@ -5,11 +5,13 @@ let Receiver = {
     balance : 0
 }
 
+//The Deposit function
 function Deposit(amount){
     Amount = Number(Amount) + Number(amount);
     return ("Your account has been deposited with Birr " + amount + " and You have Birr " + Amount);
 }
 
+//The Withdraw function
 function Withdraw(amount){
     if (Amount > amount ||  amount < 500){
         Amount = Amount - amount 
@@ -21,10 +23,12 @@ function Withdraw(amount){
     }
 }
 
+// Show Balance function
 function Balance(){
     return ("Your Balance is Birr " + Amount)
 }
 
+//Transfering money into another account function
 function Transfer(accNum, amount){
     if(Number(Amount) > Number(amount)){
         Receiver.AccNum = accNum;
@@ -37,6 +41,7 @@ function Transfer(accNum, amount){
     }
 }
 
+//The IIFEs
 (function() {
     var value;
     var choice = prompt("1, To deposit\n2, To withdraw\n3, To see balance\n 4, To transfer");
