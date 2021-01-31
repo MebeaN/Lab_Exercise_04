@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(41, 35, 35);
+}
+#container{
+    width: 50%;
+    height: 550px;
+    margin: 50px auto;
+    background-color: rgb(48, 223, 208);
+}
+
+#calc{
+    width: 50%;
+    height: 500px;
+    background-color: white ;
+    border-radius: 3%;
+    margin-left: 25%;
+    position: relative;
+    top: 25px;
+}
+
+#output{
+    position: relative;
+    top: 2%;
+    border-radius: 3%;
+    height: 20%;
+    text-align: right;
+    margin: 2%;
+    background-color: rgb(139, 209, 241);
+    font-size: 200%;
+}
+
+.buttons{
+    height: 80%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+button{
+    width: 22%;
+    height: 15%;
+    margin: 1%;
+    float: left;
+    border: none;
+}
+
+.number:hover{
+    background-color: gold;
+}
+
+#result{
+    height: 50px;
+}
+
+#zero{
+    width: 70%;
+}
+

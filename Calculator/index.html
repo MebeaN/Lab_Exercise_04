@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-
-
-    <h1>Simple Console Based Calculator !!!</h1>
-
-    <h3>The Program Does the Following : </h3>
+        
+    <!-- <h1>Simple Calculator</h1>
     <ul>
-        <li>Take Operation type like addition, subtraction, multiplication, division and others</li>
-        <li>Take Data to Operate e.g numbers</e></li>
-        <li>Perform a specific Operation (do the addition, subtraction or other operations)</li>
-        <li>Display the Result </li>
-    </ul>
+        <li>Takes numbers</li>
+        <li>Performs operations</li>
+        <li>Shows output</li>
+    </ul> -->
 
+    <div id="container">
+        <div id="calc">
+            <div id="output">
+                <div id="result"></div>
+                <div id="final"></div>
+            </div>
+            <div class="buttons">
 
-    
+                <button class="btn btn-secondary"id="clear">C</button>
+                <button class="btn btn-secondary" id="times">*</button>
+                <button class="btn btn-secondary"  id="over">/</button>
+                <button class="btn btn-secondary" id="equal">=</button>
+
+                <button class="btn number" onclick="document.getElementById('result').innerText += '1' "  id="one">1</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '2' " id="two">2</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '3' " id="three">3</button>
+                <button class="btn btn-secondary" id="plus">+</button>
+
+                <button class="btn number" onclick="document.getElementById('result').innerText += '4' " id="four">4</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '5' " id="five">5</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '6' " id="six">6</button>
+                <button class="btn btn-secondary" id="minus">-</button>
+
+                <button class="btn number" onclick="document.getElementById('result').innerText += '7' " id="seven">7</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '8' " id="eight">8</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '9' " id="nine">9</button>
+                <button class="btn btn-secondary" id="square">sq</button>
+                <button class="btn number" onclick="document.getElementById('result').innerText += '0' " id="zero">0</button>
+                <button class="btn btn-secondary" id="sqRoot">sqrt</button>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/app.js"></script>
 
 </body>
